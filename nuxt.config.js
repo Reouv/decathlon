@@ -1,4 +1,3 @@
-
 module.exports = {
   mode: 'universal',
   /*
@@ -38,8 +37,8 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
+    'bootstrap-vue/nuxt'
     // Doc: https://github.com/nuxt-community/modules/tree/master/packages/bulma
-    '@nuxtjs/bulma',
   ],
   /*
   ** Build configuration

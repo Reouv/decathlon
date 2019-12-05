@@ -12,10 +12,11 @@
     "heroku-postbuild": "npm run build"
   },
   "dependencies": {
-    "nuxt": "^2.0.0",
+    "@nuxtjs/bulma": "^1.2.1",
+    "bootstrap-vue": "^2.1.0",
     "cross-env": "^5.2.0",
     "koa": "^2.6.2",
-    "@nuxtjs/bulma": "^1.2.1"
+    "nuxt": "^2.0.0"
   },
   "devDependencies": {
     "nodemon": "^1.18.9"
