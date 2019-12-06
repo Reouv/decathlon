@@ -9,14 +9,14 @@
                         <h5 class="card-title">{{sport.attributes.name}}</h5>
                         <p class="card-text">{{sport.attributes.description}}</p>
                     </div>
-                    <b-button @click="affichageSwitch(sport.relationships.tags.data)" variant="primary" class="bouton-down">Read Moregit</b-button>
+                    <b-button @click="affichageSwitch(sport.relationships.tags.data,sport.attributes)" variant="primary" class="bouton-down">Read Moregit</b-button>
                 </div>
                 <br>
             </div>
 
         </div>
         <div v-else>
-            <sportChild :childs="childData"/>
+            <sportChild :childs="childData" :info="childData2"/>
         </div>
 
     </div>
@@ -57,6 +57,7 @@
                 afficher: true,
                 sports: null,
                 childData: null,
+                childData2: null,
             }
         },
 
@@ -67,8 +68,9 @@
                 })
         },
         methods: {
-            affichageSwitch(value) {
+            affichageSwitch(value,value2) {
                 this.childData = value
+                this.childData2 = value2
                 this.afficher = false
             }
         }

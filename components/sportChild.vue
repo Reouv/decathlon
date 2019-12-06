@@ -2,13 +2,13 @@
 
     <div class="box-colonne">
         <div class="onglet">
-            <h2>Sports : Cyclisme</h2>
+            <h2>Sports : {{info.name}}</h2>
         </div>
         <div class="box-line">
 
             <div class="description-sport">
-                <h1>Title</h1>
-                <p>Combining features of road bikes and mountain bikes, hybrid biking is what you need to ride into the city, on long roads and even venture on more winding paths. Excellent recreational sport, the hybrid bike is also required during competitions, for example in cyclocross, practiced on outdoor circuits with obstacles.</p>
+                <h1>{{info.name}}</h1>
+                <p>{{info.description}}</p>
             </div>
 
             <div class="card menu scrollbar scrollbar-primary" >
@@ -32,6 +32,7 @@
     export default {
         props: {
             childs: null,
+            info:null,
         },
 
         methods :{
