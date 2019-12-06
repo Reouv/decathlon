@@ -1,12 +1,15 @@
 <template>
     <div>
         <header>
-            <img src="../assets/logo_decathlon.jpg" alt="logo Décathlon" class="img_logo">
+            <img src="../assets/logo_decathlon.jpg" alt="logo Décathlon" class="img_logo" @click="redirect">
         </header>
     </div>
 </template>
 
 <style scoped>
+    img{
+    cursor: pointer;
+    }
     header {
         width: 100%;
         height: 80px;
@@ -24,5 +27,13 @@
 </style>
 
 <script>
-    export default {}
+    export default {
+        methods :
+            {
+                redirect(){
+                    this.$router.push("/")
+                }
+            }
+
+    }
 </script>
