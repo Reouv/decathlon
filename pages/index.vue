@@ -1,30 +1,36 @@
 <template>
-    <div class="wrapper">
-        <div class="div1">
-            <img src="../assets/Banniere.jpeg" alt="Pas d'image lol" width="101%">
+    <div class="box-banniere">
+        <div class="banniere">
+            <img src="../assets/ban.png" alt="Pas d'image lol">
         </div>
-        <div class="div2">
-            <b-container class="bv-example-row bv-example-row-flex-cols" fluid>
-                <b-row>
-                    <b-col align-self="end">
-                        <div id=contenu>
-                            <span>Les nouveaux sports</span>
-                        </div>
-                    </b-col>
-                </b-row>
-                <b-row>
-                    <b-col align-self="end">
-                        <div class="selector2">
-                        </div>
-                    </b-col>
-                </b-row>
-                <b-row>
-                    <b-col align-self="end">
-                        <div class="selector3">
-                        </div>
-                    </b-col>
-                </b-row>
-            </b-container>
+        <div class="box-produits">
+
+            <div class="produit">
+                <img src="../assets/cyclisme.jpg" class="img-produit" alt="image sport">
+                <div class="description">
+                    <p>Okay okay just a test</p>
+                    <p>Okay okay just a test</p>
+                </div>
+            </div>
+
+
+            <div class="produit">
+                <img src="../assets/cyclisme.jpg" class="img-produit" alt="image sport">
+                <div class="description">
+                    <p>Okay okay just a test</p>
+                    <p>Okay okay just a test</p>
+                </div>
+            </div>
+
+
+            <div class="produit">
+                <img src="../assets/cyclisme.jpg" class="img-produit" alt="image sport">
+                <div class="description">
+                    <p>Okay okay just a test</p>
+                    <p>Okay okay just a test</p>
+                </div>
+            </div>
+
         </div>
     </div>
 </template>
@@ -40,83 +46,12 @@
 </script>
 
 <style>
-
-    #contenu:hover{
-        background-color: #c3c7d1;
-    }
-    #contenu{
-        font:Verdana, Geneva, sans-serif;
-        font-size:18px;
-        text-align:center;
-        height:16vh;
-        display: table;
-        width: 100%;
-    }
-    #contenu span {
-        /* Aligne le texte verticalement au milieu */
-        vertical-align:middle;
-        display: table-cell;
-    }
-
-    .selector1 {
-        width: 100%;
-        height: 16vh;
-    }
-    .selector2 {
-        background-color: purple;
-        width: 100%;
-        height: 15vh;
-    }
-    .selector3 {
-        background-color: blue;
-        width: 100%;
-        height: 15vh;
-    }
-
-    .div1 {
-        width: 60%;
-        height: 50vh;
-        float: left;
-        position: relative;
-
-    }
-
-    .div2 {
-        width: 40%;
-        height: 50vh;
-        float: left;
-        position: relative;
-
-    }
-
-    .container {
-        margin: 0 auto;
-        min-height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    .title {
-        font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-        'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-        display: block;
-        font-weight: 300;
-        font-size: 100px;
-        color: #35495e;
-        letter-spacing: 1px;
-    }
-
-    .subtitle {
-        font-weight: 300;
-        font-size: 42px;
-        color: #526488;
-        word-spacing: 5px;
-        padding-bottom: 15px;
-    }
-
-    .links {
-        padding-top: 15px;
-    }
+    div.box-banniere{width: 100%;display: flex;flex-wrap: wrap;justify-content: space-between;}
+    div.box-banniere div.banniere{width: 59%;}
+    div.box-banniere div.banniere img{width: 100%;}
+    div.box-banniere div.box-produits {width: 40%;}
+    div.box-banniere div.produit{display: flex;width: 100%;max-height: 130px;}
+    div.box-banniere div.box-produits div.produit{width: 100%;display: flex;flex-wrap: wrap;justify-content: space-between;}
+    div.box-banniere div.box-produits div.produit img{display: block;width: 30%;}
+    div.box-banniere div.box-produits div.produit div.description{width: 65%;}
 </style>
