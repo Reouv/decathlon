@@ -50,6 +50,8 @@
             </div>
 
         </div>
+        Nous Trouver
+        <iframe src="https://www.google.com/maps/d/embed?mid=1TX0RGuOYFh1Huc92G0ZERB4STrI" width="100%" height="480"></iframe>
     </div>
 </template>
 

@@ -10,10 +10,10 @@
                         <p class="card-text">{{sport.attributes.description}}</p>
                     </div>
                     <b-button @click="affichageSwitch(sport.relationships.tags.data)" variant="primary" class="bouton-down">Plus d'infos</b-button>
-
                 </div>
                 <br>
             </div>
+
         </div>
         <div v-else>
             <sportChild :childs="childData"/>
