@@ -1,8 +1,7 @@
 <template>
-
     <div class="box-banniere">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <div class="banniere">
+        <div class="banniere" @click="main">
             <img src="../assets/ban.png" alt="Pas d'image lol">
         </div>
         <div class="box-produits" >
@@ -11,16 +10,13 @@
                 <img src="../assets/cyclisme.jpg" class="img-produit" alt="image sport">
                 <div class="description" @click="redirect">
                     <div class="text">
-                        <p>Voir la liste de nos sports associés</p>
+                        <p>Nos sports associés</p>
                     </div>
                     <div class="fleche">
                         <i class="material-icons" style="font-size:36px;">keyboard_arrow_right</i>
                     </div>
                 </div>
-
             </div>
-
-
             <div class="produit btn btn-4">
                 <img src="../assets/cyclisme.jpg" class="img-produit" alt="image sport">
                 <div class="description" @click="decathlon">
@@ -66,6 +62,9 @@
 
         methods:
             {
+                main(){
+                    this.$router.push("/main")
+                },
                 redirect() {
                     this.$router.push("/sports")
                 },
