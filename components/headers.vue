@@ -12,7 +12,8 @@
         height: 80px;
         top: 0;
         background-color: rgba(35, 35, 35, 1);
-        margin-bottom: 10px;
+        box-shadow: 0px 3px 5px black;
+        margin-bottom: 3px;
     }
 
     header img.img_logo{
