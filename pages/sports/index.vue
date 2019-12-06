@@ -9,7 +9,7 @@
                         <h5 class="card-title">{{sport.attributes.name}}</h5>
                         <p class="card-text">{{sport.attributes.description}}</p>
                     </div>
-                    <b-button @click="affichageSwitch(sport.relationships.tags.data,sport.attributes)" variant="primary" class="bouton-down">Read Moregit</b-button>
+                    <b-button @click="affichageSwitch(sport.relationships.tags.data,sport.attributes)" variant="primary" class="bouton-down">Read More</b-button>
                 </div>
                 <br>
             </div>

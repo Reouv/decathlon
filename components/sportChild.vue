@@ -22,8 +22,9 @@
                 </ul>
             </div>
         </div>
-
         <b-button id="button-spt" variant="button-sport" @click="modifAffichage">Revenir a la liste des sports</b-button>
+
+
     </div>
 
 </template>
@@ -45,19 +46,19 @@
 </script>
 
 <style>
-    div.onglet{background-color: #575859;border-radius: 0px 0px 20px 20px;}
-    div.onglet h2{color: white;text-align: center}
+    div.onglet{background-color: #575859;border-radius: 0px 0px 20px 20px;width: 100%;margin-left: 30%;}
+    div.onglet h2{color: white;text-align: center;}
 
-    div.box-colonne{width: 60%;margin: auto;display: flex;flex-direction: column;}
-    div.box-colonne div.box-line{width: 100%;display: flex;flex-wrap: wrap;justify-content: space-around;padding: 20px;border-radius: 5px;}
-    div.box-colonne div.box-line div.description-sport{width: 40%;background-color: rgba(0,0,0,0.8); border-radius: 10px;box-shadow: 0px 3px 10px black;padding: 8px;}
+    div.box-colonne{width: 60%;display: flex;flex-direction: column;}
+    div.box-colonne div.box-line{width: 100%;display: flex;flex-wrap: wrap;justify-content: space-around;padding: 20px;border-radius: 5px;background-color: rgba(0,0,0,0.5);margin-top: 10%;margin-left: 30%;}
+    div.box-colonne div.box-line div.description-sport{width: 40%; border-radius: 10px;padding: 8px;}
     div.menu{max-height: 295px;overflow: auto;margin-top: 20px;}
 
     div.box-colonne h1{font-size: 1.2vw;text-align: center;color: white}
     div.box-colonne p{font-size: 1vw;text-align: justify;color: white}
 
-    div.box-colonne #button-spt{max-width: 300px;margin: auto;border-radius: 5px;color: rgba(0,0,0,1);transition: all 0.25s;border: grey 1px solid;}
-    div.box-colonne #button-spt:hover{box-shadow: 0 1px 5px black;background-color: rgba(0, 0, 0, 0.7);color: white}
+    div.box-colonne #button-spt{max-width: 300px;border-radius: 5px;background-color: rgba(0, 0, 0, 0.7);color: white;transition: all 0.25s;border: #EAEAEA 1px solid;margin-top: 20px;margin-left: 30%;}
+    div.box-colonne #button-spt:hover{box-shadow: 0 1px 5px black;background-color: rgba(0, 0, 0, 0.3);color: black}
 
     /* width */
     ::-webkit-scrollbar {

@@ -18,7 +18,7 @@
                 </div>
             </div>
             <div class="produit btn btn-4">
-                <img src="../assets/cyclisme.jpg" class="img-produit" alt="image sport">
+                <img src="../assets/image-decath.jpg" class="img-produit" alt="image sport">
                 <div class="description" @click="decathlon">
                     <div class="text">
                         <p>Visiter notre site partenaire</p>
