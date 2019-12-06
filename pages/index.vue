@@ -110,6 +110,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        cursor: pointer;
     }
 
     div.box-banniere div.banniere {
