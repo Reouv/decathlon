@@ -1,5 +1,9 @@
 <template>
+
     <div class="box-colonne">
+        <div class="onglet">
+            <h2>Sports : Cyclisme</h2>
+        </div>
         <div class="box-line">
 
             <div class="description-sport">
@@ -40,10 +44,13 @@
 </script>
 
 <style>
+    div.onglet{background-color: #575859;border-radius: 0px 0px 20px 20px;}
+    div.onglet h2{color: white;text-align: center}
+
     div.box-colonne{width: 60%;margin: auto;display: flex;flex-direction: column;}
-    div.box-colonne div.box-line{width: 100%;display: flex;flex-wrap: wrap;justify-content: space-around;padding: 20px;}
-    div.box-colonne div.box-line div.description-sport{width: 40%;background-color: rgba(0,118,180,1); border-radius: 10px;box-shadow: 0px 3px 10px black;padding: 8px;}
-    div.menu{max-height: 400px;overflow: auto;margin-top: 20px;}
+    div.box-colonne div.box-line{width: 100%;display: flex;flex-wrap: wrap;justify-content: space-around;padding: 20px;border-radius: 5px;}
+    div.box-colonne div.box-line div.description-sport{width: 40%;background-color: rgba(0,0,0,0.8); border-radius: 10px;box-shadow: 0px 3px 10px black;padding: 8px;}
+    div.menu{max-height: 295px;overflow: auto;margin-top: 20px;}
 
     div.box-colonne h1{font-size: 1.2vw;text-align: center;color: white}
     div.box-colonne p{font-size: 1vw;text-align: justify;color: white}

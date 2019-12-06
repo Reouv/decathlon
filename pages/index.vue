@@ -36,11 +36,11 @@
 
 
             <div class="produit btn btn-4">
-                <img src="../assets/cyclisme.jpg" class="img-produit" alt="image sport">
+                <img src="../assets/solde.png" class="img-produit" alt="image sport">
                 <div class="description" @click="troll">
                     <div class="text">
                         <p>PROMO -90%</p>
-                        <p>Solde de la nuit d'info unique au monde !!</p>
+                        <p>Nos promos pour la nuit de l'info !</p>
                     </div>
                     <div class="fleche">
                         <i class="material-icons" style="font-size:36px;">keyboard_arrow_right</i>
@@ -50,7 +50,7 @@
             </div>
 
         </div>
-        Nous Trouver
+        <h3>Localisez-nous</h3>
         <iframe src="https://www.google.com/maps/d/embed?mid=1TX0RGuOYFh1Huc92G0ZERB4STrI" width="100%" height="480"></iframe>
     </div>
 </template>
@@ -86,6 +86,15 @@
         box-shadow: 0 5px 35px 0px rgba(0, 0, 0, .5);
     }
 
+    div.box-banniere h3{
+        font-size: 1.6vw;
+        text-align: center;
+        color: black;
+        display: block;
+        margin: auto;
+        padding: 20px;
+    }
+
     div.produit:hover:before, div.produit:hover:after {
         display: block;
         content: '';
@@ -102,7 +111,6 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        z-index: 1
     }
 
     div.box-banniere div.banniere {
@@ -117,7 +125,7 @@
         width: 40%;
         display: flex;
         flex-direction: column;
-        justify-content: space-between
+        justify-content: space-between;
     }
 
     div.box-banniere div.produit {
@@ -208,11 +216,11 @@
         }
 
         div.box-banniere div.box-produits div.produit div.description p {
-            font-size: 1.0vw;
+            font-size: 1.8vw;
         }
 
         div.box-banniere div.box-produits div.produit div.description div.text {
-            width: 40%;
+            width: 80%;
         }
 
         div.box-banniere div.box-produits div.produit div.description div.fleche {
