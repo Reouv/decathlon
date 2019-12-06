@@ -37,7 +37,8 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
-    'bootstrap-vue/nuxt'
+    'bootstrap-vue/nuxt',
+    '@nuxtjs/axios',
     // Doc: https://github.com/nuxt-community/modules/tree/master/packages/bulma
   ],
   /*
